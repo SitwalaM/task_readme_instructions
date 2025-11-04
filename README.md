@@ -39,7 +39,7 @@ Scripts in `src` cluster data using x and y coordinates HDBSCAN algorithm.
 
 - **Time Estimate:**
   - Base estimate for 100 batch_size: ~16 min (slowest task: 9.7 sec/file)
-  - Recommended for 100 batch_size: `#SBATCH --time=00:25:00` (25 min, ~55% safety margin)
+  - Recommended for 100 batch_size: `#SBATCH --time=00:25:00` (with safety)
  
 - **Memory Estimate:**
   - Peak for 10 files: ~195 MB
