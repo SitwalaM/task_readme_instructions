@@ -24,6 +24,8 @@ Scripts in `src` cluster data using x and y coordinates HDBSCAN algorithm.
 > python3 setup_config.py
 > sbatch parallel_hdb_scan.sh
 > ```
+> 
+> **Performance Note:** For small datasets, `python3 setup_config.py` runs quickly on the main node. For large datasets, it is recommended to submit this step to a worker node using SLURM (`sbatch`) to avoid overloading the main node.
 
 3. **Outputs**
    - Cluster results are saved in `../data/clusters`.
