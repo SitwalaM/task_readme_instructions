@@ -31,6 +31,7 @@ Scripts in `src` cluster data using x and y coordinates HDBSCAN algorithm.
      - `readme.txt` with the number of clusters per file
      - Images of clusters for each file
      - Compressed CSV with cluster number per data_id
+   - Failed files are listed in `error_log.txt` (e.g., files with only zeros or other issues).
 
 > **Storage Note:** Budget for about 100 KB of space in the output folder for each data_id. This should be considered if processing a very large number of files.
 
